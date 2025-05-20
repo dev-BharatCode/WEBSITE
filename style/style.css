@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+}
+
+header{
+    height: 10;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #2d04f9, #ff0000);
+    text-decoration: #ffffff;
+  }
+
+nav {
+ background: linear-gradient(135deg, #5f3eff, #ff0000e0);
+    overflow: hidden;
+    text-align: center;
+}
+
+.animated-text{
+    margin: 0;
+    padding: 0;
+    background-color:linear-gradiant rgb(28, 28, 28);
+    color: #fff;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color:rgb(28, 28, 28);
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Student";
+    }
+    21%,40%{
+        content: "Coder";
+    }
+    41%,60%{
+        content: "Web Developer";
+    }
+    61%,80%{
+        content: "Web Designer";
+    }
+    81%,100%{
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+nav a {
+    text-decoration: white;
+    padding: 15px;
+    text-align: center;
+    float: center;
+    color: rgb(255, 255, 255);
+}
+
+main {
+   background:rgb(28, 28, 28);
+    text-align: center;
+    padding: 10px;
+
+}
+
+h2 {
+    padding: 20px;
+       text-decoration: #ffffff;
+}
+
+section:nth-child(even) {
+    background: linear-gradient(135deg,#000000, #292929);
+    padding: 10px;
+
+}
+h3{
+ background: linear-gradient(136deg,#2d04f9, #ff0000);
+float: initial;
+ color:rgb(255, 255, 255);
+  height: 25px;
+
+}
+
+
+ h1{
+       color: #ffffff;
+
+}
+h2{
+    color :#ffffff
+}
+h4{
+    color:#ffffff
+}
+h5{
+    color: #ffffff;
+}
+
+
+video {
+    padding: 10px;
+}
+footer {
+ background: linear-gradient(135deg, #2d04f9, #ff0000);
+    overflow: hidden;
+   
+}
+
+footer a {
+
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    color: rgb(255, 255, 255);
+}
+h5{
+    padding: 30px;
+}
